@@ -39,6 +39,11 @@
         ***** END LICENSE BLOCK *****
 */
 
+/**
+ * <P>The purpose of this program is to calculate distances in feet and meters using 2 conversion methods and displaying them in a table</P>
+ *
+ */
+
 public class Main {
 
     public static void main(String[] args) {
@@ -53,9 +58,21 @@ public class Main {
             System.out.printf("%7.3f\n", meterToFoot(meters));
         }
     }
+
+    /**
+     *
+     * @param foot takes in distance as feet
+     * @return value as meter using simple calculation of 0.305 * feet
+     */
     public static double footToMeter(double foot) {
         return 0.305 * foot;
     }
+
+    /**
+     *
+     * @param meter takes in distance as meter
+     * @return value as feet using calculation of 3.279 * meter
+     */
 
     public static double meterToFoot(double meter) {
         return 3.279 * meter;
